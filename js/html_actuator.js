@@ -142,6 +142,7 @@ HTMLActuator.prototype.getScore = function() {
   return this.score;
 };
 function plGetScore() {
+  var score = gameManager.actuator.getScore();
   gameManager.storageManager.clearGameState();
-  return gameManager.actuator.getScore();
+  return score;
 }
